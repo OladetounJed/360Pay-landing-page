@@ -263,6 +263,10 @@ form {
     text-align: center;
   }
 
+  .feature p {
+    font-size: 1.2em;
+  }
+
   .security-con div {
     flex-direction: column;
     text-align: center;
