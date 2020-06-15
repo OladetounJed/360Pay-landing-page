@@ -268,15 +268,23 @@ form {
     text-align: center;
   }
 
+  .security-con p {
+    font-size: 1.2em;
+  }
+
   .footer {
     height: 95vh;
     flex-direction: column;
     text-align: center;
   }
 
+  .footer p {
+    font-size: 1.2em;
+  }
+
   .signature {
     margin: 1em 0;
-    font-size: 1.8em;
+    font-size: 1.2em;
   }
 
   .signature a:active {
