@@ -43,6 +43,11 @@ html {
   background-size: cover;
   width: 100rw;
   height: 40em;
+  animation: shake .8s;
+}
+
+.background-mobile {
+  display: none;
 }
 
 .landing-page-content {
@@ -192,14 +197,14 @@ form {
 
 /*Mobile Responsiveness*/
 
-@media (max-width: 990px) {
+
+
+@media (max-width: 768px) {
   html {
     font-size: 10px;
     position: relative;
   }
-  .landing-page {
-    animation: shake 1s;
-  }
+
   .header {
     padding: 0;
   }
@@ -209,8 +214,7 @@ form {
     width: 100%;
     background-color: white;
     display: none;
-    animation: moveInRight .5s;
-    
+    animation: moveInRight 0.5s;
   }
   .header-left ul {
     margin-left: -5em;
@@ -220,7 +224,6 @@ form {
     margin-top: 30%;
     text-align: center;
     font-size: 1.5em;
-    animation: slightShake .5s .5s ease-in;
   }
 
   .close {
@@ -229,7 +232,7 @@ form {
     padding: 2.5em;
     position: absolute;
     right: 0;
-    transition: all .2s ease-in;
+    transition: all 0.3s ease-in;
   }
   .close:active {
     transform: rotate(360deg);
@@ -250,16 +253,22 @@ form {
     width: 3em;
     transform: rotate(180deg);
     padding: 2em;
-    transition: all .2s ease-in;
-    
+    transition: all 0.2s ease-in;
   }
 
   .menu:active {
     transform: rotate(360deg);
   }
-
   .landing-page {
-    background-image: url();
+    background: none;
+  }
+  .background-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .about-con{
+    margin-top: 15em;
   }
 
   .landing-page-content {
@@ -334,3 +343,9 @@ form {
     color: #1249be;
   }
 }
+
+@media only screen and (min-device-width: 760px) and (max-device-width: 800px) {
+  .about-con {
+    margin-top: 50em;
+  }
+ }
