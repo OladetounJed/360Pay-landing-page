@@ -195,6 +195,7 @@ form {
     padding: 0;
   }
   .header-left {
+    display: none;
     position: fixed;
     height: 100%;
     width: 100%;
