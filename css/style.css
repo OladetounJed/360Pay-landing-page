@@ -261,15 +261,18 @@ form {
   }
   .landing-page {
     background: none;
+    height: 100vh;
+  }
+  .landing-page-content {
+    margin-top: 5em;
   }
   .background-mobile {
+    margin-top: 8em;
     display: block;
     width: 100%;
   }
 
-  .about-con{
-    margin-top: 15em;
-  }
+ 
 
   .landing-page-content {
     font-size: 0.8em;
@@ -344,8 +347,3 @@ form {
   }
 }
 
-@media only screen and (min-device-width: 760px) and (max-device-width: 800px) {
-  .about-con {
-    margin-top: 50em;
-  }
- }
