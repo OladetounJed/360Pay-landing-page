@@ -1,0 +1,284 @@
+/*Header Styling*/
+
+html {
+  font-family: Open Sans;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nunito Sans";
+  padding: 1em;
+}
+
+.header-left ul {
+  padding-top: 1em;
+  display: flex;
+}
+
+.header-menu {
+  display: none;
+}
+
+.header-left a {
+  margin: 1em 2em 0 6em;
+  font-weight: 900;
+}
+.logo {
+  width: 9em;
+}
+.login {
+  padding: 0.4em 2em;
+  background-color: white;
+  border-radius: 2em;
+}
+
+/*HomePage Styling*/
+
+.landing-page {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  width: 100rw;
+  height: 40em;
+}
+
+.landing-page-content {
+  margin: 4em;
+  line-height: 4.5em;
+}
+.landing-page-content p {
+  font-family: "Montserrat";
+  font-size: 3em;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+input,
+button {
+  font-family: "Open Sans";
+}
+
+form {
+  margin-top: 2em;
+}
+
+.know-better-input {
+  width: 18em;
+  height: 2em;
+  border-radius: 2em;
+  border: 0;
+  padding: 0.5em 1em;
+  background-color: #f1f6f9;
+}
+.know-better-submit {
+  height: 2.8em;
+  width: 9em;
+  border-radius: 2em;
+  border: 0;
+  padding: 0.5em;
+  background-color: #000000;
+  color: #ffff;
+}
+
+.more-info-con {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.more-info-details {
+  width: 70%;
+  padding-top: 4em;
+}
+.more-info-details h1 {
+  font-size: 3em;
+  font-family: "Montserrat";
+  font-weight: 100;
+  text-decoration: underline;
+  padding-bottom: 1em;
+}
+.more-info-details p {
+  font-family: "Nunito Sans";
+  letter-spacing: 0.1em;
+  line-height: 1.4em;
+  font-weight: 300;
+}
+.features-con-heading,
+.security-heading {
+  font-size: 4em;
+  font-family: "Montserrat";
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  color: #1249be;
+}
+.feature {
+  display: flex;
+}
+.feature img {
+  width: 40%;
+  margin: 0 auto;
+}
+.feature h1 {
+  font-size: 2em;
+  text-decoration: underline;
+  font-family: "Montserrat";
+  line-height: 1.5em;
+  padding-bottom: 1.5em;
+}
+.feature p,
+.security-con p {
+  font-size: 0.8em;
+  font-family: "Open Sans";
+  line-height: 1.5em;
+}
+.feature div {
+  padding: 5em;
+  width: 50%;
+}
+.security-heading {
+  color: #ffb4c4;
+}
+.security-con div {
+  display: flex;
+  justify-content: space-around;
+}
+.security-con p {
+  margin-top: 2em;
+  line-height: 2.5em;
+  color: #1249be;
+}
+.security-con span {
+  font-weight: 700;
+}
+.note {
+  text-align: center;
+  font-size: 8em;
+  color: #585252;
+  font-family: "Open Sans";
+  font-weight: 700;
+  padding: 1em;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 2em 0;
+}
+.app-logo {
+  width: 8em;
+  margin-bottom: 3em;
+}
+.footer p {
+  line-height: 2em;
+  font-family: "Nunito Sans";
+}
+.icon-con img {
+  width: 1.5em;
+  padding-left: 1em;
+}
+
+.signature {
+  text-align: center;
+  color: #1249be;
+  font-size: 1.2em;
+  margin: 4em 0 1em 0;
+}
+
+/*Mobile Responsiveness*/
+
+@media (max-width: 990px) {
+  html {
+    font-size: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  .header {
+    padding: 0;
+  }
+  .header-left {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+  .header-left ul {
+    margin-left: -5em;
+    flex-direction: column;
+  }
+  .header-left li {
+    margin-top: 30%;
+    text-align: center;
+  }
+  .header-menu {
+    display: block;
+  }
+
+  .logo {
+    padding: 2em;
+  }
+  .menu {
+    width: 3em;
+    transform: rotate(180deg);
+    padding: 2em;
+  }
+
+  .landing-page {
+    background-image: url();
+  }
+
+  .landing-page-content {
+    font-size: 0.8em;
+    text-align: center;
+    margin: 4em 0;
+  }
+
+  .more-info-con {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .more-info-con img {
+    display: none;
+  }
+
+  .more-info-details {
+    width: 100%;
+  }
+
+  .feature {
+    flex-direction: column;
+  }
+
+  .feature:last-child {
+    flex-direction: column-reverse;
+  }
+
+  .feature img {
+    width: 80%;
+  }
+
+  .feature div {
+    width: 100%;
+    padding: 5em 0;
+    text-align: center;
+  }
+
+  .security-con div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer {
+    height: 95vh;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .signature {
+    margin: 1em 0;
+    font-size: 1.8em;
+  }
+
+  .signature a:active {
+    color: #1249be;
+  }
+}
