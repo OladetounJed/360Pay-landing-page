@@ -127,12 +127,14 @@ form {
 }
 .feature p,
 .security-con p {
+  width: 60%;
   font-size: 0.8em;
   font-family: "Open Sans";
   line-height: 1.5em;
+  text-align: center;
 }
 .feature div {
-  padding: 5em;
+  padding: 9em;
   width: 50%;
 }
 .security-heading {
@@ -151,6 +153,7 @@ form {
   font-weight: 700;
 }
 .note {
+  margin: 1em 0;
   text-align: center;
   font-size: 8em;
   color: #585252;
@@ -258,13 +261,15 @@ form {
   }
 
   .feature div {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     padding: 5em 0;
     text-align: center;
   }
 
-  .feature p {
+  .feature p, .security-con p {
     font-size: 1.2em;
+    width: 100%;
   }
 
   .security-con div {
@@ -272,14 +277,16 @@ form {
     text-align: center;
   }
 
-  .security-con p {
-    font-size: 1.2em;
-  }
+
 
   .footer {
-    height: 95vh;
+    height: 85vh;
     flex-direction: column;
     text-align: center;
+  }
+
+  .icon-con img {
+    width: 1.8em;
   }
 
   .footer p {
