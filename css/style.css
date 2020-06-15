@@ -24,6 +24,9 @@ html {
   margin: 1em 2em 0 6em;
   font-weight: 900;
 }
+.close {
+  display: none;
+}
 .logo {
   width: 9em;
 }
@@ -192,17 +195,17 @@ form {
   html {
     font-size: 10px;
     position: relative;
-   
   }
   .header {
     padding: 0;
   }
   .header-left {
-    display: none;
     position: fixed;
     height: 100%;
     width: 100%;
     background-color: white;
+    display: none;
+    
   }
   .header-left ul {
     margin-left: -5em;
@@ -211,6 +214,20 @@ form {
   .header-left li {
     margin-top: 30%;
     text-align: center;
+    font-size: 1.5em;
+  }
+
+  .close {
+    display: block;
+    width: 3em;
+    padding: 2.5em;
+    position: absolute;
+    right: 0;
+  }
+
+  .login {
+    background-color: #585252;
+    color: white;
   }
   .header-menu {
     display: block;
@@ -267,7 +284,8 @@ form {
     text-align: center;
   }
 
-  .feature p, .security-con p {
+  .feature p,
+  .security-con p {
     font-size: 1.2em;
     width: 100%;
   }
@@ -277,16 +295,14 @@ form {
     text-align: center;
   }
 
-
-
   .footer {
-    height: 85vh;
+    height: 90vh;
     flex-direction: column;
     text-align: center;
   }
 
   .icon-con img {
-    width: 1.8em;
+    width: 2em;
   }
 
   .footer p {
