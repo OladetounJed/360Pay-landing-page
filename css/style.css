@@ -46,6 +46,7 @@ html {
 }
 
 .landing-page-content {
+  animation: moveInLeft 2s;
   margin: 4em;
   line-height: 4.5em;
 }
@@ -196,6 +197,9 @@ form {
     font-size: 10px;
     position: relative;
   }
+  .landing-page {
+    animation: shake 1s;
+  }
   .header {
     padding: 0;
   }
@@ -205,6 +209,7 @@ form {
     width: 100%;
     background-color: white;
     display: none;
+    animation: moveInRight .5s;
     
   }
   .header-left ul {
@@ -215,14 +220,19 @@ form {
     margin-top: 30%;
     text-align: center;
     font-size: 1.5em;
+    animation: slightShake .5s .5s ease-in;
   }
 
   .close {
     display: block;
-    width: 3em;
+    width: 2em;
     padding: 2.5em;
     position: absolute;
     right: 0;
+    transition: all .2s ease-in;
+  }
+  .close:active {
+    transform: rotate(360deg);
   }
 
   .login {
@@ -240,6 +250,12 @@ form {
     width: 3em;
     transform: rotate(180deg);
     padding: 2em;
+    transition: all .2s ease-in;
+    
+  }
+
+  .menu:active {
+    transform: rotate(360deg);
   }
 
   .landing-page {
